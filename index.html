@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="calculator-app-heading">
+        Calculator App
+    </h1>
+
+    <div class="container">
+        <div class="calc-body">
+          <div class="calc-screen">
+              <input class="render-input" type="input"  name="" id="renderInput">
+              <i class="fa-sharp fa-solid fa-delete-left eraseing-button" onclick="eraseing()"></i>
+            </div>
+          <div class="calc-button-row">
+            <div class="button c"  onclick="clearAll()">C</div>
+            <div class="button l" onclick="render('≠')">≠</div>
+            <div class="button l" onclick="render('%')">%</div>
+            <div class="button l" onclick="render('/')">/</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button" onclick="render(7)">7</div>
+            <div class="button" onclick="render(8)">8</div>
+            <div class="button" onclick="render(9)">9</div>
+            <div class="button l" onclick="render('x')">x</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button" onclick="render(4)">4</div>
+            <div class="button" onclick="render(5)">5</div>
+            <div class="button" onclick="render(6)">6</div>
+            <div class="button l" onclick="render('-')">−</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button" onclick="render(1)">1</div>
+            <div class="button" onclick="render(2)">2</div>
+            <div class="button" onclick="render(3)">3</div>
+            <div class="button l" onclick="render('+')">+</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button" onclick="render('.')">.</div>
+            <div class="button" onclick="render(0)">0</div>
+            <div class="button" onclick="render('<')">
+              <</div>
+                <div class="button l" onclick="renderButton()" >=</div>
+            </div>
+          </div>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
